@@ -25,7 +25,7 @@ class CashTransaction extends Model
      */
     public function pembeli(): BelongsTo
     {
-        return $this->belongsTo(Student::class, 'pembeli_id');
+        return $this->belongsTo(Pembeli::class, 'pembeli_id');
     }
 
     /**

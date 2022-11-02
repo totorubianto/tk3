@@ -12,7 +12,7 @@ class StudentFactory extends Factory
      *
      * @var string
      */
-    protected $model = Student::class;
+    protected $model = Pembeli::class;
 
     /**
      * Define the model's default state.
