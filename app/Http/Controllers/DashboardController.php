@@ -23,7 +23,7 @@ class DashboardController extends Controller
         $amountThisMonth = indonesian_currency($this->cashTransactionRepository->sumAmountBy('month', month: date('m')));
 
         $latestCashTransactions = $this->cashTransactionRepository
-            ->cashTransactionLatest(['id', 'student_id', 'user_id', 'bill', 'amount', 'date'], 5);
+            ->cashTransactionLatest(['id', 'pembeli_id', 'user_id', 'bill', 'amount', 'date'], 5);
 
         return view('dashboard.index', [
             'pembeliCount' => Pembeli::count(),

@@ -24,7 +24,7 @@ class CashTransactionStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'student_id' => ['required'],
+            'pembeli_id' => ['required'],
             'bill' => ['required', 'integer', 'digits_between:3,191'],
             'amount' => ['required', 'integer', 'digits_between:3,191'],
             'date' => ['required', 'date'],
@@ -40,7 +40,7 @@ class CashTransactionStoreRequest extends FormRequest
     public function messages()
     {
         return [
-            'student_id.required' => 'Kolom nama pelajar wajib diisi!',
+            'pembeli_id.required' => 'Kolom nama pelajar wajib diisi!',
 
             'bill.required' => 'Kolom tagihan wajib diisi!',
             'bill.integer' => 'Kolom tagihan harus angka!',

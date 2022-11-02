@@ -27,7 +27,7 @@ class CashTransactionReportRepository extends Controller
         $startDate = date('Y-m-d', strtotime($start));
         $endDate = date('Y-m-d', strtotime($end));
 
-        $cashTransactions = $this->model->select('user_id', 'student_id', 'amount', 'date')
+        $cashTransactions = $this->model->select('user_id', 'pembeli_id', 'amount', 'date')
             ->with('students:id,name', 'users:id,name')
             ->whereBetween('date', [$startDate, $endDate])
             ->orderBy('date')->get();

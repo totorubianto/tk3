@@ -13,7 +13,7 @@
 				url: url,
 				success: function (res) {
 					$('#showCashTransactionModal #user_id').val(res.data.users.name);
-					$('#showCashTransactionModal #student_id').val(res.data.students.name);
+					$('#showCashTransactionModal #pembeli_id').val(res.data.students.name);
 					$('#showCashTransactionModal #bill').val(res.data.bill);
 					$('#showCashTransactionModal #amount').val(res.data.amount);
 					$('#showCashTransactionModal #date').val(res.data.date);

@@ -16,7 +16,7 @@ class CashTransactionEditResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'student_id' => $this->student_id,
+            'pembeli_id' => $this->pembeli_id,
             'user_id' => $this->user_id,
             'bill' => $this->bill,
             'amount' => $this->amount,

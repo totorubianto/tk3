@@ -19,7 +19,7 @@
                     <div class="col-md-12">
                         <div class="mb-3">
                             <label for="name" class="form-label">Nama Pelajar</label>
-                            <input type="text" class="form-control" id="student_id" disabled>
+                            <input type="text" class="form-control" id="pembeli_id" disabled>
                         </div>
                     </div>
                 </div>
